@@ -150,7 +150,7 @@ const GALLERY_IMAGES = [
   },
   {
     label: "Storm Damage Repair",
-    src: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=450&fit=crop",
+    src: "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=600&h=450&fit=crop",
   },
   {
     label: "Full Roof Replacement",
