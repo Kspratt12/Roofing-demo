@@ -149,23 +149,23 @@ const GALLERY_IMAGES = [
     src: "https://images.unsplash.com/photo-1632759145351-1d592919f522?w=600&h=450&fit=crop",
   },
   {
-    label: "Storm Damage Repair",
-    src: "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=600&h=450&fit=crop",
+    label: "Residential Roof Replacement",
+    src: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=450&fit=crop",
   },
   {
-    label: "Full Roof Replacement",
-    src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=450&fit=crop",
+    label: "New Construction Roofing",
+    src: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=450&fit=crop",
   },
   {
-    label: "Commercial Flat Roof",
-    src: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=450&fit=crop",
+    label: "Suburban Home Project",
+    src: "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=600&h=450&fit=crop",
   },
   {
-    label: "Gutter Installation",
-    src: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=450&fit=crop",
+    label: "Complete Roof Restoration",
+    src: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&h=450&fit=crop",
   },
   {
-    label: "Residential Project",
+    label: "Family Home Reroofing",
     src: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&h=450&fit=crop",
   },
 ];
@@ -333,7 +333,7 @@ export default function Home() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&h=1080&fit=crop')",
+              "url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&h=1080&fit=crop')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/80 to-gray-900/40" />
@@ -665,7 +665,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-fixed"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&h=600&fit=crop')",
+            backgroundImage: "url('https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=1920&h=600&fit=crop')",
           }}
         />
         <div className="absolute inset-0 bg-blue-900/90" />
