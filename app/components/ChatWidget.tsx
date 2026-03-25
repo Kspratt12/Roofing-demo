@@ -94,7 +94,7 @@ export default function ChatWidget() {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="absolute bottom-20 right-0 w-[380px] bg-white rounded-3xl shadow-2xl border border-gray-200 overflow-hidden animate-slide-in">
+        <div className="fixed bottom-24 right-6 w-[380px] max-h-[calc(100vh-120px)] bg-white rounded-3xl shadow-2xl border border-gray-200 overflow-hidden animate-slide-in flex flex-col">
           {/* Header */}
           <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-5">
             <div className="flex items-center justify-between">
@@ -124,7 +124,7 @@ export default function ChatWidget() {
           </div>
 
           {/* Messages */}
-          <div className="h-80 overflow-y-auto p-4 space-y-4 bg-gray-50">
+          <div className="flex-1 min-h-0 overflow-y-auto p-4 space-y-4 bg-gray-50">
             {messages.map((msg, i) => (
               <div
                 key={i}
