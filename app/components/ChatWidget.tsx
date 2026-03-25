@@ -16,7 +16,7 @@ const QUICK_REPLIES = [
 
 const BOT_RESPONSES: Record<string, string> = {
   "i need a roof repair":
-    "We can help with that! Whether it's a leak, missing shingles, or flashing damage — we'll get it fixed fast. Can I get your address so we can schedule a free inspection?",
+    "We can help with that! Whether it's a leak, missing shingles, or flashing damage. We'll get it fixed fast. Can I get your address so we can schedule a free inspection?",
   "get a free estimate":
     "Absolutely! Our free estimates include a full roof inspection, detailed photos, and a written quote with no hidden fees. What's the best number to reach you at?",
   "storm damage help":
@@ -86,7 +86,7 @@ export default function ChatWidget() {
             </svg>
           </button>
           <p className="text-sm text-gray-700 pr-4">
-            Need help with your roof? Chat with us now — we respond instantly!
+            Need help with your roof? Chat with us now, we respond instantly!
           </p>
           <div className="absolute bottom-0 right-8 translate-y-1/2 rotate-45 w-3 h-3 bg-white border-r border-b border-gray-100" />
         </div>
