@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import ChatWidget from "./components/ChatWidget";
 
 const NAV_LINKS = [
@@ -183,12 +183,14 @@ function StarRating({ count }: { count: number }) {
 }
 
 function AnimatedCounter({ target, suffix = "" }: { target: string; suffix?: string }) {
-  const [count, setCount] = useState(0);
-  const [hasAnimated, setHasAnimated] = useState(false);
   const numericTarget = parseInt(target.replace(/[^0-9]/g, ""));
+  const [count, setCount] = useState(numericTarget);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const ref = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
-    if (hasAnimated) return;
+    if (hasAnimated || !ref.current) return;
+    setCount(0);
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
@@ -206,19 +208,18 @@ function AnimatedCounter({ target, suffix = "" }: { target: string; suffix?: str
           }, 30);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
-    const el = document.getElementById(`counter-${target}`);
-    if (el) observer.observe(el);
+    observer.observe(ref.current);
     return () => observer.disconnect();
-  }, [hasAnimated, numericTarget, target]);
+  }, [hasAnimated, numericTarget]);
 
   const display = target.includes(".")
     ? (count / 10).toFixed(1)
     : count.toString();
 
   return (
-    <span id={`counter-${target}`}>
+    <span ref={ref}>
       {display}{suffix}
     </span>
   );
